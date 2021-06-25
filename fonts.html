@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Code Your Own Website</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <header>
+    <a href="https://scienceoxford.com" target="_blank"><img src=".\images\so_logo.png" alt="Science Oxford Logo" width="400px" height="auto"></a>
+    <h1>Add Fonts to your Website</h1>
+    <p>These instructions show you how to add new fonts into your project.</p>
+    <br>
+  </header>
+
+  <div id="find" class="left">
+    <h3>Choosing a font</h3>
+    <p>Your computer has lots of fonts installed, but not every computer will recognise the same fonts.</p>
+    <p>By linking to an online font, you can make sure that anyone who reads your story will see what you want them to see.</p>
+    <p>Visit <a href="https://fonts.google.com/" target="_blank">fonts.google.com</a>, and look through the available fonts.</p>
+    <p>When you find one that you like, click on it. You should see a screen like the below picture.</p>
+    <img src=".\images\about-font.PNG" alt="about a chosen font screenshot" width="1000px" height="auto">
+    <br>
+    <br>
+    <p>Choose the style that you want to use in your project, then click <strong>+ Select this style</strong> on the right hand side.</p>
+    <p>A sidebar will show up, showing you the information you need to use this font in your project.</p>
+    <p><strong>Click @import instead of &ltlink>.</strong></p>
+    <img src=".\images\use-font.PNG" alt="add a file from your computer screenshot" width="600px" height="auto">
+    <br>
+    <br>
+  </div>
+
+  <div id="add" class="left">
+    <h3>Adding fonts to your website</h3>
+    <p>Copy <strong>part of</strong> the <strong>first bit of code</strong> from your font information. From <code>@import</code> to the semi-colon, do not include the top and bottom <code>&ltstyle></code>.</p>
+    <p>Go back to Trinket, and choose the <strong>style.css</strong> tab. Past this new code at the top, on a new line.</p>
+    <p>Now you need to decide where you want to use this font - for your whole website, for the paragraph text only, the headings only?</p>
+    <p>Copy and paste the <strong>second bit of code</strong> from your font <strong>inside one of your sets of curly brackets</strong>.</p>
+    <br>
+    <h4>Example:</h4>
+    <pre>@import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
+
+/* Instructions to display the whole page */
+body {
+  font-family: 'Goldman', cursive;
+  background-color: White;
+}
+</pre>
+    <br>
+    <p>The example code above will import the font 'Goldman', then change <strong>the font of all of the text</strong>.</p>
+    <p>You can import as many fonts as you like, to use in different parts of your website.</p>
+    <br>
+  </div>
+
+  <nav class="links bg_green">
+    <a href="index.html">Go Back</a>
+  </nav>
+
+  <footer class="links">
+    <a href="https://github.com/ScienceOxford/html-website/" target="_blank">View on GitHub</a>
+  </footer>
+
+  </body>
+  </html>
